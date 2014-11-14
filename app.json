@@ -1,0 +1,25 @@
+{
+  "name": "Hubot for IRC",
+  "description": "One-button deploy for Hubot on Heroku with IRC adapter.",
+  "logo": "https://i.cloudup.com/_823ueoTYl.png",
+  "repository": "https://github.com/cobyism/hubot-heroku-irc",
+  "env": {
+    "HEROKU_URL": {
+      "description": "Url of this app so hubot can regularly ping himself to stay awake.",
+      "value": "http://YOURAPPNAMEHERE.herokuapp.com"
+    },
+    "HUBOT_SLACK_TOKEN": {
+      "description": "The token you are given by Slack when you add the Hubot integration."
+    },
+    "HUBOT_SLACK_TEAM": {
+      "description": "Your team's Slack subdomain. e.g. if your team is https://myteam.slack.com/, you would enter 'myteam' here."
+    },
+    "HUBOT_SLACK_BOTNAME": {
+      "description": "Name your Hubot",
+      "value": "slackbot"
+    }
+  },
+  "addons": [
+    "rediscloud"
+  ]
+}
